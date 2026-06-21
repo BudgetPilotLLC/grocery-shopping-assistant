@@ -1,0 +1,412 @@
+:root {
+  --bg: #f6f4ef;
+  --surface: #ffffff;
+  --surface-2: #f0f7f1;
+  --ink: #18201b;
+  --muted: #667069;
+  --line: #dfe5dc;
+  --green: #2f6b3f;
+  --green-2: #204d2f;
+  --amber: #b56b21;
+  --red: #a8443d;
+  --blue: #315f86;
+  --shadow: 0 14px 34px rgba(24, 32, 27, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.topbar {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.86);
+  backdrop-filter: blur(18px);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.brand-mark {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: var(--green);
+  color: white;
+  font-weight: 800;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 0.92rem;
+  line-height: 1.2;
+}
+
+.brand p,
+.panel-header span,
+.metric span {
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+button {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  min-height: 40px;
+  border-radius: 8px;
+  padding: 0 13px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: transform 140ms ease, border-color 140ms ease, background 140ms ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  border-color: #b9c7bb;
+}
+
+button svg {
+  width: 17px;
+  height: 17px;
+}
+
+.primary-button {
+  background: var(--green);
+  color: white;
+  border-color: var(--green);
+}
+
+.primary-button:hover {
+  background: var(--green-2);
+  border-color: var(--green-2);
+}
+
+.app-shell {
+  display: grid;
+  grid-template-columns: minmax(300px, 380px) minmax(0, 1fr);
+  gap: 18px;
+  padding: 18px 24px 28px;
+}
+
+.sidebar,
+.workspace {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+
+.panel,
+.metric,
+.store-plan {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.panel {
+  padding: 16px;
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.list-panel {
+  min-height: 470px;
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  width: 100%;
+  min-height: 395px;
+  resize: vertical;
+  flex: 1;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 13px;
+  line-height: 1.45;
+  background: #fbfcfa;
+  color: var(--ink);
+}
+
+textarea:focus,
+input:focus {
+  outline: 2px solid rgba(47, 107, 63, 0.18);
+  border-color: var(--green);
+}
+
+.store-toggles {
+  display: grid;
+  gap: 9px;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 11px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fbfcfa;
+}
+
+.toggle input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--green);
+}
+
+.store-swatch {
+  width: 10px;
+  height: 22px;
+  border-radius: 999px;
+}
+
+.settings-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+input {
+  width: 100%;
+  min-height: 38px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  padding: 0 10px;
+  color: var(--ink);
+  background: #fbfcfa;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.metric {
+  padding: 16px;
+  display: grid;
+  gap: 8px;
+}
+
+.metric strong {
+  font-size: 1.45rem;
+  line-height: 1.1;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 780px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 11px 10px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+th {
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+td {
+  font-size: 0.9rem;
+}
+
+tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.price {
+  font-weight: 800;
+}
+
+.store-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  white-space: nowrap;
+}
+
+.store-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+}
+
+.store-plans {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.store-plan {
+  padding: 16px;
+}
+
+.store-plan header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.store-plan h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.store-total {
+  font-weight: 850;
+  font-size: 1.18rem;
+}
+
+.store-items {
+  display: grid;
+  gap: 8px;
+}
+
+.store-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+  font-size: 0.88rem;
+}
+
+.missing-list {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.missing-chip {
+  border: 1px solid rgba(168, 68, 61, 0.28);
+  color: var(--red);
+  background: #fff8f7;
+  border-radius: 999px;
+  padding: 7px 10px;
+  font-size: 0.84rem;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 1040px) {
+  .app-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .list-panel {
+    min-height: 360px;
+  }
+
+  textarea {
+    min-height: 280px;
+  }
+}
+
+@media (max-width: 760px) {
+  .topbar {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 14px;
+  }
+
+  .actions {
+    width: 100%;
+  }
+
+  .actions button {
+    flex: 1;
+  }
+
+  .app-shell {
+    padding: 14px;
+  }
+
+  .metrics,
+  .store-plans {
+    grid-template-columns: 1fr;
+  }
+}
+

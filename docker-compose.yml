@@ -1,0 +1,20 @@
+services:
+  grocery-assistant:
+    build: .
+    container_name: grocery-assistant
+    restart: unless-stopped
+    ports:
+      - "8787:8787"
+    environment:
+      GROCERY_ASSISTANT_TOKEN: "${GROCERY_ASSISTANT_TOKEN:-}"
+      GROCERY_LIST_PATH: "${GROCERY_LIST_PATH:-/app/data/grocery-list.txt}"
+      AMAZON_PROVIDER: "${AMAZON_PROVIDER:-disabled}"
+      AMAZON_MARKETPLACE: "${AMAZON_MARKETPLACE:-US}"
+      AMAZON_ASSOCIATE_TAG: "${AMAZON_ASSOCIATE_TAG:-}"
+      AMAZON_ACCESS_KEY_ID: "${AMAZON_ACCESS_KEY_ID:-}"
+      AMAZON_SECRET_ACCESS_KEY: "${AMAZON_SECRET_ACCESS_KEY:-}"
+      AMAZON_CREATORS_API_TOKEN: "${AMAZON_CREATORS_API_TOKEN:-}"
+      AMAZON_FRESH_PROVIDER: "${AMAZON_FRESH_PROVIDER:-disabled}"
+      AMAZON_FRESH_ZIP: "${AMAZON_FRESH_ZIP:-}"
+    volumes:
+      - ./data:/app/data

@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grocery Price Board</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" defer></script>
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark">G</div>
+      <div>
+        <h1>Grocery Price Board</h1>
+        <p id="catalogStatus">Loading catalog</p>
+      </div>
+    </div>
+    <div class="actions">
+      <button class="icon-button" id="loadNoteButton" title="Load saved note">
+        <i data-lucide="refresh-cw"></i>
+        <span>Load List</span>
+      </button>
+      <button class="primary-button" id="analyzeButton">
+        <i data-lucide="calculator"></i>
+        <span>Analyze</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="app-shell">
+    <aside class="sidebar">
+      <section class="panel list-panel">
+        <div class="panel-header">
+          <h2>List</h2>
+          <span id="listCount">0 items</span>
+        </div>
+        <textarea id="noteInput" spellcheck="false"></textarea>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Stores</h2>
+        </div>
+        <div class="store-toggles" id="storeToggles"></div>
+      </section>
+
+      <section class="panel settings-grid">
+        <label>
+          <span>ZIP</span>
+          <input id="zipInput" inputmode="numeric" maxlength="10" placeholder="Optional">
+        </label>
+        <label>
+          <span>Webhook</span>
+          <input id="webhookInput" readonly value="/api/apple-note">
+        </label>
+        <label>
+          <span>List File</span>
+          <input id="sourceInput" readonly value="Loading">
+        </label>
+      </section>
+    </aside>
+
+    <section class="workspace">
+      <section class="metrics" aria-label="Basket totals">
+        <article class="metric">
+          <span>Split Basket</span>
+          <strong id="splitTotal">$0.00</strong>
+        </article>
+        <article class="metric">
+          <span>Single Store</span>
+          <strong id="singleStore">$0.00</strong>
+        </article>
+        <article class="metric">
+          <span>Matched</span>
+          <strong id="matchedCount">0 / 0</strong>
+        </article>
+        <article class="metric">
+          <span>Avg Serving</span>
+          <strong id="avgServing">$0.00</strong>
+        </article>
+      </section>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Cheapest By Item</h2>
+          <span id="updatedStatus">Ready</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Qty</th>
+                <th>Store</th>
+                <th>Product</th>
+                <th>Package</th>
+                <th>Total</th>
+                <th>Serving</th>
+              </tr>
+            </thead>
+            <tbody id="itemsBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="store-plans" id="storePlans"></section>
+
+      <section class="panel hidden" id="missingPanel">
+        <div class="panel-header">
+          <h2>Missing</h2>
+          <span id="missingCount">0 items</span>
+        </div>
+        <div class="missing-list" id="missingList"></div>
+      </section>
+    </section>
+  </main>
+</body>
+</html>

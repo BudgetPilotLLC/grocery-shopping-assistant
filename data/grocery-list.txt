@@ -1,0 +1,8 @@
+Groceries:
+- 1 gal whole milk
+- 12 eggs
+- 2 lb chicken breast
+- bananas
+- rice (servings 10)
+- peanut butter
+

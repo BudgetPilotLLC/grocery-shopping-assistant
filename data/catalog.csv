@@ -1,0 +1,36 @@
+store,product,category,aliases,size_qty,size_unit,package_desc,price,servings,url,last_updated,zip,notes
+Aldi,Whole Milk Gallon,Dairy,whole milk;milk,1,gal,1 gallon,3.19,16,,2026-06-21,Sample,sample placeholder
+Publix,Publix Whole Milk,Dairy,whole milk;milk,1,gal,1 gallon,4.29,16,,2026-06-21,Sample,sample placeholder
+Sam's Club,Member's Mark Whole Milk 2 Pack,Dairy,whole milk;milk,2,gal,2 gallons,6.48,32,,2026-06-21,Sample,sample placeholder
+Amazon,Amazon Grocery Whole Milk,Dairy,whole milk;milk,1,gal,1 gallon,4.59,16,,2026-06-21,Sample,sample placeholder
+Amazon Fresh,Amazon Fresh Whole Milk,Dairy,whole milk;milk,1,gal,1 gallon,4.19,16,,2026-06-21,Sample,sample placeholder
+Aldi,Grade A Large Eggs,Protein,eggs;large eggs;dozen eggs,12,ct,12 count,2.49,12,,2026-06-21,Sample,sample placeholder
+Publix,Publix Large Eggs,Protein,eggs;large eggs;dozen eggs,12,ct,12 count,3.79,12,,2026-06-21,Sample,sample placeholder
+Sam's Club,Member's Mark Large Eggs 24 Count,Protein,eggs;large eggs,24,ct,24 count,5.18,24,,2026-06-21,Sample,sample placeholder
+Amazon,Happy Belly Large Eggs,Protein,eggs;large eggs;dozen eggs,12,ct,12 count,4.99,12,,2026-06-21,Sample,sample placeholder
+Amazon Fresh,Amazon Fresh Large Eggs,Protein,eggs;large eggs;dozen eggs,12,ct,12 count,3.99,12,,2026-06-21,Sample,sample placeholder
+Aldi,Boneless Skinless Chicken Breast,Meat,chicken breast;boneless chicken breast,3,lb,3 lb tray,11.07,12,,2026-06-21,Sample,sample placeholder
+Publix,Boneless Skinless Chicken Breast,Meat,chicken breast;boneless chicken breast,1.5,lb,1.5 lb tray,8.99,6,,2026-06-21,Sample,sample placeholder
+Sam's Club,Member's Mark Chicken Breast,Meat,chicken breast;boneless chicken breast,6,lb,6 lb pack,20.94,24,,2026-06-21,Sample,sample placeholder
+Amazon,Amazon Grocery Chicken Breast,Meat,chicken breast;boneless chicken breast,1.5,lb,1.5 lb tray,9.99,6,,2026-06-21,Sample,sample placeholder
+Amazon Fresh,Amazon Fresh Chicken Breast,Meat,chicken breast;boneless chicken breast,1.5,lb,1.5 lb tray,8.49,6,,2026-06-21,Sample,sample placeholder
+Aldi,Long Grain White Rice,Pantry,rice;white rice;long grain rice,5,lb,5 lb bag,3.45,50,,2026-06-21,Sample,sample placeholder
+Publix,Publix Long Grain White Rice,Pantry,rice;white rice;long grain rice,5,lb,5 lb bag,4.99,50,,2026-06-21,Sample,sample placeholder
+Sam's Club,Mahatma Extra Long Grain Rice,Pantry,rice;white rice;long grain rice,25,lb,25 lb bag,14.98,250,,2026-06-21,Sample,sample placeholder
+Amazon,Mahatma Extra Long Grain Rice,Pantry,rice;white rice;long grain rice,10,lb,10 lb bag,8.99,100,,2026-06-21,Sample,sample placeholder
+Amazon Fresh,Amazon Grocery Long Grain White Rice,Pantry,rice;white rice;long grain rice,5,lb,5 lb bag,4.49,50,,2026-06-21,Sample,sample placeholder
+Aldi,Bananas,Produce,bananas;banana,2,lb,about 6 bananas,0.98,6,,2026-06-21,Sample,sample placeholder
+Publix,Bananas,Produce,bananas;banana,2,lb,about 6 bananas,1.58,6,,2026-06-21,Sample,sample placeholder
+Sam's Club,Bananas,Produce,bananas;banana,3,lb,about 9 bananas,1.68,9,,2026-06-21,Sample,sample placeholder
+Amazon,Amazon Grocery Bananas,Produce,bananas;banana,2,lb,about 6 bananas,1.99,6,,2026-06-21,Sample,sample placeholder
+Amazon Fresh,Amazon Fresh Bananas,Produce,bananas;banana,2,lb,about 6 bananas,1.79,6,,2026-06-21,Sample,sample placeholder
+Aldi,Creamy Peanut Butter,Pantry,peanut butter;creamy peanut butter,40,oz,40 oz jar,3.85,35,,2026-06-21,Sample,sample placeholder
+Publix,Publix Peanut Butter,Pantry,peanut butter;creamy peanut butter,28,oz,28 oz jar,4.49,25,,2026-06-21,Sample,sample placeholder
+Sam's Club,Jif Creamy Peanut Butter 2 Pack,Pantry,peanut butter;creamy peanut butter,96,oz,2 x 48 oz jars,10.98,84,,2026-06-21,Sample,sample placeholder
+Amazon,Happy Belly Creamy Peanut Butter,Pantry,peanut butter;creamy peanut butter,40,oz,40 oz jar,5.12,35,,2026-06-21,Sample,sample placeholder
+Amazon Fresh,Amazon Grocery Creamy Peanut Butter,Pantry,peanut butter;creamy peanut butter,40,oz,40 oz jar,4.79,35,,2026-06-21,Sample,sample placeholder
+Aldi,White Sandwich Bread,Bakery,bread;sandwich bread;white bread,20,oz,20 oz loaf,1.55,20,,2026-06-21,Sample,sample placeholder
+Publix,Publix White Sandwich Bread,Bakery,bread;sandwich bread;white bread,20,oz,20 oz loaf,2.89,20,,2026-06-21,Sample,sample placeholder
+Sam's Club,Nature's Own Butterbread 2 Pack,Bakery,bread;sandwich bread;white bread,40,oz,2 loaves,5.48,40,,2026-06-21,Sample,sample placeholder
+Amazon,Amazon Grocery White Bread,Bakery,bread;sandwich bread;white bread,20,oz,20 oz loaf,2.79,20,,2026-06-21,Sample,sample placeholder
+Amazon Fresh,Amazon Fresh White Bread,Bakery,bread;sandwich bread;white bread,20,oz,20 oz loaf,2.69,20,,2026-06-21,Sample,sample placeholder
