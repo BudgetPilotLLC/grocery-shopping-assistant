@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grocery Shopping Assistant | BudgetPilotLLC</title>
+  <meta name="description" content="Grocery Shopping Assistant helps households compare grocery basket options, estimate price per serving, and plan store trips from a synced grocery list.">
+  <link rel="canonical" href="https://budgetpilotllc.github.io/grocery-shopping-assistant/">
+  <meta property="og:title" content="Grocery Shopping Assistant">
+  <meta property="og:description" content="A practical grocery planning tool for comparing basket options and price per serving.">
+  <meta property="og:image" content="https://budgetpilotllc.github.io/grocery-shopping-assistant/assets/app-preview.png">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <header class="site-nav">
+    <a class="brand" href="./" aria-label="Grocery Shopping Assistant home">
+      <span class="brand-mark">G</span>
+      <span>Grocery Shopping Assistant</span>
+    </a>
+    <nav aria-label="Primary">
+      <a href="#features">Features</a>
+      <a href="#pricing-data">Pricing Data</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">BudgetPilotLLC</p>
+        <h1>Grocery Shopping Assistant</h1>
+        <p class="hero-copy">A household grocery planner that turns a synced shopping list into store-by-store basket estimates, price-per-serving comparisons, and clearer shopping decisions.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#features">See What It Does</a>
+          <a class="button secondary" href="https://github.com/BudgetPilotLLC" rel="noreferrer">GitHub Profile</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro band">
+      <div class="section-inner">
+        <p class="lead">The project is being built for everyday grocery planning: make a list once, compare realistic basket options, and understand whether bulk sizes or nearby stores actually save money after servings are considered.</p>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="section-inner two-column">
+        <div>
+          <p class="eyebrow">What It Does</p>
+          <h2>Compares groceries in the way families actually shop.</h2>
+        </div>
+        <div class="feature-list">
+          <article>
+            <h3>Synced List Input</h3>
+            <p>Reads a grocery list from a OneDrive-friendly text file today, with a mobile app planned for a smoother list experience later.</p>
+          </article>
+          <article>
+            <h3>Basket Comparison</h3>
+            <p>Compares item matches across configured stores including Amazon, Amazon Fresh, Publix, Aldi, and Sam's Club when data is available.</p>
+          </article>
+          <article>
+            <h3>Price Per Serving</h3>
+            <p>Normalizes package sizes and servings so bulk purchases can be compared against smaller packages without guesswork.</p>
+          </article>
+          <article>
+            <h3>Mobile Roadmap</h3>
+            <p>The planned mobile app will focus on list management, household shopping workflows, and reviewable recommendations before checkout.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contrast" id="pricing-data">
+      <div class="section-inner split">
+        <div>
+          <p class="eyebrow">Pricing Data</p>
+          <h2>Transparent by design.</h2>
+          <p>The current prototype uses a maintained catalog file and is being prepared for approved data providers. Amazon and Amazon Fresh are treated as separate sources because regular Amazon.com grocery listings and Fresh grocery offers can differ by availability, region, and delivery context.</p>
+          <p>When Amazon affiliate links or product content are used, this site may earn from qualifying purchases as an Amazon Associate. The app does not ask visitors for Amazon account passwords.</p>
+        </div>
+        <div class="data-panel">
+          <h3>Current Sources</h3>
+          <ul>
+            <li>Local grocery catalog import</li>
+            <li>OneDrive-synced shopping list</li>
+            <li>Planned credentialed provider integrations</li>
+            <li>Planned mobile app list experience</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+        <div class="callout">
+          <p class="eyebrow">Status</p>
+          <h2>In active prototype development.</h2>
+          <p>Grocery Shopping Assistant is not a store, delivery service, or checkout provider. It is a planning tool that helps compare available grocery options before a household decides where to shop.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <strong>Grocery Shopping Assistant</strong>
+      <p>As an Amazon Associate, BudgetPilotLLC may earn from qualifying purchases when Amazon affiliate links are present.</p>
+    </div>
+    <div class="footer-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="https://github.com/BudgetPilotLLC" rel="noreferrer">GitHub</a>
+    </div>
+  </footer>
+</body>
+</html>
+

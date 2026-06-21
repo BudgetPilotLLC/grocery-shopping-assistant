@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy | Grocery Shopping Assistant</title>
+  <meta name="description" content="Privacy information for Grocery Shopping Assistant by BudgetPilotLLC.">
+  <link rel="canonical" href="https://budgetpilotllc.github.io/grocery-shopping-assistant/privacy.html">
+  <link rel="stylesheet" href="site.css">
+</head>
+<body class="plain-page">
+  <header class="site-nav plain">
+    <a class="brand" href="./" aria-label="Grocery Shopping Assistant home">
+      <span class="brand-mark">G</span>
+      <span>Grocery Shopping Assistant</span>
+    </a>
+    <nav aria-label="Primary">
+      <a href="./#features">Features</a>
+      <a href="./#pricing-data">Pricing Data</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+  </header>
+
+  <main class="document">
+    <p class="eyebrow">BudgetPilotLLC</p>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: June 21, 2026</p>
+
+    <section>
+      <h2>Overview</h2>
+      <p>Grocery Shopping Assistant is a grocery planning project. The public GitHub Pages site provides information about the project. The local prototype reads grocery list data from files controlled by the user.</p>
+    </section>
+
+    <section>
+      <h2>Information We Collect</h2>
+      <p>This public website does not include account creation, analytics scripts, contact forms, or advertising trackers. GitHub may process standard server logs when it hosts GitHub Pages.</p>
+    </section>
+
+    <section>
+      <h2>Local Prototype Data</h2>
+      <p>The prototype can read grocery list text and catalog data from files configured by the user. Those files remain under the user's control unless the user chooses to sync, host, or share them through another service such as OneDrive or a private server.</p>
+    </section>
+
+    <section>
+      <h2>Amazon and Affiliate Links</h2>
+      <p>BudgetPilotLLC may participate in the Amazon Associates Program. As an Amazon Associate, BudgetPilotLLC may earn from qualifying purchases when Amazon affiliate links are present. Amazon links may direct visitors to Amazon, where Amazon's own privacy and account policies apply.</p>
+    </section>
+
+    <section>
+      <h2>Credentials</h2>
+      <p>The app should use approved API or provider credentials for integrations. It should not collect or store a visitor's Amazon shopping account password.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p>For project questions, contact BudgetPilotLLC through the public GitHub profile.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <strong>Grocery Shopping Assistant</strong>
+      <p>Household grocery planning, basket comparison, and price-per-serving estimates.</p>
+    </div>
+    <div class="footer-links">
+      <a href="./">Home</a>
+      <a href="https://github.com/BudgetPilotLLC" rel="noreferrer">GitHub</a>
+    </div>
+  </footer>
+</body>
+</html>
+
