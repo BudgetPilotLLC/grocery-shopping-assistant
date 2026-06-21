@@ -10,13 +10,7 @@ Use this file as your shared grocery list:
 data/grocery-list.txt
 ```
 
-Because the project is in:
-
-```text
-<project-folder>
-```
-
-that file should sync through OneDrive. Edit it from your phone, then the assistant reads the synced local copy.
+If this project folder or the list file lives inside your local OneDrive folder, that file should sync through OneDrive. Edit it from your phone, then the assistant reads the synced local copy.
 
 ## Custom File Path
 
@@ -66,4 +60,3 @@ Microsoft Graph represents OneDrive files as `driveItem` resources and supports 
 Rclone has a OneDrive backend that can mount or sync OneDrive on Linux:
 
 - https://rclone.org/onedrive/
-
