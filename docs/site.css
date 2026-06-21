@@ -305,6 +305,106 @@ footer p {
   background: var(--surface);
 }
 
+.recommendations {
+  background: var(--paper);
+}
+
+.recommendations-hero {
+  padding: clamp(90px, 14vw, 150px) clamp(18px, 5vw, 72px) clamp(46px, 8vw, 86px);
+  color: white;
+  background:
+    linear-gradient(90deg, rgba(23, 60, 39, 0.95), rgba(47, 107, 63, 0.82)),
+    url("assets/app-preview.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.recommendations-hero .eyebrow {
+  color: #f0c07e;
+}
+
+.recommendations-hero h1 {
+  max-width: 880px;
+  margin-bottom: 22px;
+}
+
+.recommendations-hero .lead {
+  max-width: 820px;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.compact {
+  padding-top: clamp(28px, 5vw, 44px);
+  padding-bottom: 0;
+}
+
+.compact-top {
+  padding-top: clamp(28px, 5vw, 52px);
+}
+
+.affiliate-disclosure {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 18px 20px;
+  border: 1px solid rgba(181, 107, 33, 0.32);
+  border-radius: 8px;
+  background: #fff8ee;
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+.affiliate-disclosure span {
+  color: var(--muted);
+}
+
+.recommendation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.pick-card {
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 24px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.pick-card h2 {
+  margin-bottom: 12px;
+  font-size: clamp(1.35rem, 3vw, 2rem);
+  line-height: 1.08;
+}
+
+.pick-card p:not(.eyebrow) {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.pick-link {
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  border-radius: 8px;
+  padding: 0 14px;
+  color: white;
+  background: var(--green);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.pick-link:hover {
+  background: var(--green-dark);
+}
+
 .document {
   width: min(860px, calc(100% - 36px));
   margin: 0 auto;
@@ -351,12 +451,16 @@ footer p {
 
   .two-column,
   .split,
-  .feature-list {
+  .feature-list,
+  .recommendation-grid {
     grid-template-columns: 1fr;
+  }
+
+  .affiliate-disclosure {
+    flex-direction: column;
   }
 
   footer {
     flex-direction: column;
   }
 }
-

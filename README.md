@@ -46,6 +46,8 @@ https://budgetpilotllc.github.io/grocery-shopping-assistant/
 
 Setup steps are in [docs/github-pages.md](docs/github-pages.md).
 
+The site includes a starter recommendations page at `/recommendations.html`. Its Amazon links currently use the Associate tag `budgetpilotllc-20`; update that tag if Amazon assigned a different Store ID.
+
 ## How It Works
 
 - Paste a grocery list into the app, or POST note text to `/api/apple-note`.
