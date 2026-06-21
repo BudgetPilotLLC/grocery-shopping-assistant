@@ -1,2 +1,1 @@
-"""Grocery Shopping Assistant package."""
-
+"""PantryCents package."""

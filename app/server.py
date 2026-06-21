@@ -204,7 +204,7 @@ def local_ip() -> str:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Run the Grocery Shopping Assistant")
+    parser = argparse.ArgumentParser(description="Run PantryCents")
     parser.add_argument("--host", default="127.0.0.1")
     parser.add_argument("--port", default=8787, type=int)
     parser.add_argument("--token", default=os.environ.get("GROCERY_ASSISTANT_TOKEN", ""))
@@ -213,7 +213,7 @@ def main() -> None:
     DATA_ROOT.mkdir(parents=True, exist_ok=True)
     server = GroceryServer((args.host, args.port), GroceryHandler, token=args.token)
     display_host = "127.0.0.1" if args.host in {"0.0.0.0", ""} else args.host
-    print(f"Grocery Shopping Assistant: http://{display_host}:{args.port}")
+    print(f"PantryCents: http://{display_host}:{args.port}")
     if args.host == "0.0.0.0":
         print(f"LAN URL: http://{local_ip()}:{args.port}")
         print(f"Apple Note webhook: http://{local_ip()}:{args.port}/api/apple-note")

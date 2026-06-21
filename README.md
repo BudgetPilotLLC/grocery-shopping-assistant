@@ -1,4 +1,4 @@
-# Grocery Shopping Assistant
+# PantryCents
 
 A local grocery price board that reads a grocery list, compares matching products by store, and shows the cheapest option plus price per serving.
 
@@ -47,6 +47,12 @@ https://budgetpilotllc.github.io/grocery-shopping-assistant/
 Setup steps are in [docs/github-pages.md](docs/github-pages.md).
 
 The site includes a starter recommendations page at `/recommendations.html`. Its Amazon links currently use the Associate tag `budgetpilotllc-20`; update that tag if Amazon assigned a different Store ID.
+
+## Product Names
+
+- Grocery app: `PantryCents`
+- Budgeting app: `FlowMint`
+- Company/account umbrella: `BudgetPilotLLC` / future `BudgetPilot Labs LLC`
 
 ## How It Works
 
